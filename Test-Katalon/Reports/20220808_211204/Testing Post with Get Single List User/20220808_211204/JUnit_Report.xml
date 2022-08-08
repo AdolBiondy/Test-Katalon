@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Testing Post with Get Single List User" time="3.181" tests="2" failures="0" errors="0">
+   <testsuite name="Testing Post with Get Single List User" tests="2" failures="0" errors="0" time="3.181" skipped="0" timestamp="2022-08-08 21:12:07" hostname="aldob - DESKTOP-768VP0O" id="Test Suites/Testing Post with Get Single List User">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\aldob\\git\\Test-Katalon\\Reports\\20220808_211204\\Testing Post with Get Single List User\\20220808_211204"/>
+         <property name="logFiles" value="C:\\Users\\aldob\\git\\Test-Katalon\\Reports\\20220808_211204\\Testing Post with Get Single List User\\20220808_211204\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="aldob - DESKTOP-768VP0O"/>
+         <property name="hostAddress" value="192.168.1.8"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Test Case Get Single User" time="2.076" classname="Test Cases/Test Case Get Single User" status="PASSED">
+         <system-out><![CDATA[2022-08-08 21:12:07 - [TEST_CASE][PASSED] - Test Cases/Test Case Get Single User: Test Cases/Test Case Get Single User
+
+2022-08-08 21:12:07 - [TEST_STEP][PASSED] - Response = sendRequest(findTestObject("Get Single List User")): Send request successfully
+
+2022-08-08 21:12:09 - [MESSAGE][INFO] - HAR: C:\Users\aldob\git\Test-Katalon\Reports\20220808_211204\Testing Post with Get Single List User\20220808_211204\requests\main\0.har
+
+2022-08-08 21:12:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-08-08 21:12:09 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2022-08-08 21:12:09 - [TEST_STEP][PASSED] - parsedJson1 = slurper1.parseText(Response.getResponseText()): null
+
+2022-08-08 21:12:09 - [TEST_STEP][PASSED] - Email = email: null
+
+2022-08-08 21:12:09 - [TEST_STEP][PASSED] - Email = Email: null
+
+2022-08-08 21:12:09 - [TEST_STEP][PASSED] - out.print(parsedJson1): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Test Post" time="0.878" classname="Test Cases/Test Post" status="PASSED">
+         <system-out><![CDATA[2022-08-08 21:12:09 - [TEST_CASE][PASSED] - Test Cases/Test Post: Test Cases/Test Post
+
+2022-08-08 21:12:09 - [TEST_STEP][PASSED] - Response = sendRequest(findTestObject("Post Register - Successful")): Send request successfully
+
+2022-08-08 21:12:10 - [MESSAGE][INFO] - HAR: C:\Users\aldob\git\Test-Katalon\Reports\20220808_211204\Testing Post with Get Single List User\20220808_211204\requests\main\1.har
+
+2022-08-08 21:12:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-08-08 21:12:10 - [TEST_STEP][PASSED] - verifyElementPropertyValue(Response, "id", 4): Verify element property value successfully
+
+2022-08-08 21:12:10 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-08-08 21:12:10 - [TEST_STEP][PASSED] - verifyElementPropertyValue(Response, "token", "QpwL5tke4Pnpja7X4"): Verify element property value successfully
+
+2022-08-08 21:12:10 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-08-08 21:12:07 - [TEST_SUITE][PASSED] - Testing Post with Get Single List User: Test Cases/Test Post]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

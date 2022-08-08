@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Testing Post with Get Single List User,,,,2022-08-08 21:12:07,2022-08-08 21:12:10,3.181s,PASSED
+,,,,,,,
+Test Cases/Test Case Get Single User,,,,2022-08-08 21:12:07,2022-08-08 21:12:09,2.076s,PASSED
+"Response = sendRequest(findTestObject(""Get Single List User""))",,,,2022-08-08 21:12:07,2022-08-08 21:12:09,1.687s,PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,,2022-08-08 21:12:09,2022-08-08 21:12:09,0.005s,PASSED
+parsedJson1 = slurper1.parseText(Response.getResponseText()),,,,2022-08-08 21:12:09,2022-08-08 21:12:09,0.015s,PASSED
+Email = email,,,,2022-08-08 21:12:09,2022-08-08 21:12:09,0.007s,PASSED
+Email = Email,,,,2022-08-08 21:12:09,2022-08-08 21:12:09,0.001s,PASSED
+out.print(parsedJson1),,,,2022-08-08 21:12:09,2022-08-08 21:12:09,0.011s,PASSED
+,,,,,,,
+Test Cases/Test Post,,,,2022-08-08 21:12:09,2022-08-08 21:12:10,0.878s,PASSED
+"Response = sendRequest(findTestObject(""Post Register - Successful""))",,,,2022-08-08 21:12:09,2022-08-08 21:12:10,0.563s,PASSED
+"verifyElementPropertyValue(Response, ""id"", 4)",,,,2022-08-08 21:12:10,2022-08-08 21:12:10,0.028s,PASSED
+"verifyElementPropertyValue(Response, ""token"", ""QpwL5tke4Pnpja7X4"")",,,,2022-08-08 21:12:10,2022-08-08 21:12:10,0.018s,PASSED
